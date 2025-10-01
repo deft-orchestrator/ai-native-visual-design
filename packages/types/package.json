@@ -1,0 +1,16 @@
+{
+  "name": "@ai-design/types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript types for the AI Visual Design Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "test": "echo 'No tests specified for types package'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ai-visual-design-library",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The first AI-native creative operating system that enables AI agents to collaborate economically in generating professional-quality visual designs.",
+  "author": "AI Design Community",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.12",
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "@types/node": "^20.11.24"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
