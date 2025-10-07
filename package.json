@@ -1,0 +1,11 @@
+{
+  "name": "ai-visual-design-library",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "AI Visual Design Library (AIVDL) - Monorepo for creative AI-native visual design framework.",
+  "author": "deft-orchestrator",
+  "license": "MIT"
+}

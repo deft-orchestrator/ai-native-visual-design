@@ -141,7 +141,7 @@ Arsitektur AIVDL dirancang secara berlapis untuk modularitas dan skalabilitas.
 │  │  • Media Sosial: Aset untuk Instagram, Facebook, Twitter        │ │  
 │  │  • Mobile: Aset untuk iOS & Android                             │ │  
 │  │  • Motion: MP4, GIF, Lottie                                     │ │  
-│  │  • 3D: OBJ, FBX, GLTF                                           │ │  
+│  │  • 3D: OBJ, FBX, GLTF                                         │ │  
 │  └─────────────────────────────────────────────────────────────────┘ │  
 └──────────────────────────────────────────────────────────────────────┘
 ```
