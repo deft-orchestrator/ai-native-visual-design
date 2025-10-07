@@ -49,101 +49,101 @@ Fondasi AIVDL dibangun di atas empat pilar utama:
 
 Arsitektur AIVDL dirancang secara berlapis untuk modularitas dan skalabilitas.
 ```
-┌─────────────────────────────────────────────────────────────────┐  
-│      HUMAN INTERFACE LAYER (Lapisan Antarmuka Manusia)          │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  Natural Language API (API Bahasa Natural)                 │ │  
-│  │  • "Buat logo modern untuk startup tech"                   │ │  
-│  │  • "Perbaiki warna agar lebih harmonis"                    │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  Semantic API (API Semantik yang Berpusat pada Manusia)    │ │  
-│  │  • buatKartuNama({ ... })                                  │ │  
-│  │  • buatLogo({ ... })                                       │ │  
-│  │  • perbaikiWarna(design)                                   │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-└─────────────────────────────────────────────────────────────────┘  
+┌──────────────────────────────────────────────────────────────────────┐  
+│      HUMAN INTERFACE LAYER (Lapisan Antarmuka Manusia)               │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  Natural Language API (API Bahasa Natural)                      │ │  
+│  │  • "Buat logo modern untuk startup tech"                        │ │  
+│  │  • "Perbaiki warna agar lebih harmonis"                         │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  Semantic API (API Semantik yang Berpusat pada Manusia)         │ │  
+│  │  • buatKartuNama({ ... })                                       │ │  
+│  │  • buatLogo({ ... })                                            │ │  
+│  │  • perbaikiWarna(design)                                        │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+└──────────────────────────────────────────────────────────────────────┘  
                               ↓  
-┌─────────────────────────────────────────────────────────────────┐  
-│       CREATIVE COMPILER LAYER (Lapisan Kompiler Kreatif)        │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  Alur: Intent → AST → Optimized AST → Executable Code      │ │  
-│  │  • Tokenize: Memecah niat kreatif menjadi token.           │ │  
-│  │  │  Parse: Membangun Abstract Syntax Tree (AST) desain.    │ │  
-│  │  │  Optimize: Agen AI mengoptimalkan keputusan desain.     │ │  
-│  │  └─→ Codegen: Menghasilkan kode dari AST.                  │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-└─────────────────────────────────────────────────────────────────┘  
+┌──────────────────────────────────────────────────────────────────────┐  
+│       CREATIVE COMPILER LAYER (Lapisan Kompiler Kreatif)             │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  Alur: Intent → AST → Optimized AST → Executable Code           │ │  
+│  │  • Tokenize: Memecah niat kreatif menjadi token.                │ │  
+│  │  │  Parse: Membangun Abstract Syntax Tree (AST) desain.         │ │  
+│  │  │  Optimize: Agen AI mengoptimalkan keputusan desain.          │ │  
+│  │  └─→ Codegen: Menghasilkan kode dari AST.                       │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+└──────────────────────────────────────────────────────────────────────┘  
                               ↓  
-┌─────────────────────────────────────────────────────────────────┐  
-│ INTELLIGENCE LAYER (Lapisan Kecerdasan \- Google ADK \+ Kustom) │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  Adaptive Strategy Selector (Pemilih Strategi Adaptif)     │ │  
-│  │  ├─ Simple Mode (Mode Sederhana \- 80% kasus)              │ │  
-│  │  │  • TranslatorAgent (Agen Penerjemah \- utama)           │ │  
-│  │  │  • DebuggerAgent (Agen Debugger \- QA)                  │ │  
-│  │  │  • Cepat, murah, dan cukup untuk tugas umum.            │ │  
-│  │  │                                                         │ │  
-│  │  └─ Complex Mode (Mode Kompleks \- 20% kasus)              │ │  
+┌──────────────────────────────────────────────────────────────────────┐  
+│ INTELLIGENCE LAYER (Lapisan Kecerdasan \- Google ADK \+ Kustom)      │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  Adaptive Strategy Selector (Pemilih Strategi Adaptif)          │ │  
+│  │  ├─ Simple Mode (Mode Sederhana \- 80% kasus)                   │ │  
+│  │  │  • TranslatorAgent (Agen Penerjemah \- utama)                │ │  
+│  │  │  • DebuggerAgent (Agen Debugger \- QA)                       │ │  
+│  │  │  • Cepat, murah, dan cukup untuk tugas umum.                 │ │  
+│  │  │                                                              │ │  
+│  │  └─ Complex Mode (Mode Kompleks \- 20% kasus)                   │ │  
 │  │     • Economic Coordination (Koordinasi Ekonomi \- Contract Net)│ │  
-│  │     • Kolaborasi beberapa agen spesialis.                  │ │  
-│  │     • Agen "menawar" (bid) untuk sub-tugas.                │ │  
-│  │     • Memungkinkan kolaborasi tak terduga (emergent).      │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
+│  │     • Kolaborasi beberapa agen spesialis.                       │ │  
+│  │     • Agen "menawar" (bid) untuk sub-tugas.                     │ │  
+│  │     • Memungkinkan kolaborasi tak terduga (emergent).           │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
 │  │  Specialized Agent Pool (Kumpulan Agen Spesialis via Google ADK)│ │  
-│  │  • LogoDesignAgent, ColorHarmonyAgent, TypographyAgent,    │ │  
-│  │  • LayoutAgent, AnimationAgent, BrandStrategyAgent,        │ │  
-│  │  • QualityAssessmentAgent                                  │ │  
-│  │  • InteractiveDesignAgent (BARU)                           │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  ADK Workflow Orchestration (Orkestrasi Alur Kerja ADK)    │ │  
-│  │  • Alur kerja: Sequential / Parallel / Loop                │ │  
-│  │  • Routing dinamis berbasis LLM.                           │ │  
-│  │  • Evaluasi & pelacakan bawaan.                            │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-└─────────────────────────────────────────────────────────────────┘  
+│  │  • LogoDesignAgent, ColorHarmonyAgent, TypographyAgent,         │ │  
+│  │  • LayoutAgent, AnimationAgent, BrandStrategyAgent,             │ │  
+│  │  • QualityAssessmentAgent                                       │ │  
+│  │  • InteractiveDesignAgent (BARU)                                │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  ADK Workflow Orchestration (Orkestrasi Alur Kerja ADK)         │ │  
+│  │  • Alur kerja: Sequential / Parallel / Loop                     │ │  
+│  │  • Routing dinamis berbasis LLM.                                │ │  
+│  │  • Evaluasi & pelacakan bawaan.                                 │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+└──────────────────────────────────────────────────────────────────────┘  
                               ↓ (Meminta & Memodifikasi)  
-┌─────────────────────────────────────────────────────────────────┐  
-│     DATA LAYER (Lapisan Data \- Entity-Component-System)        │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  ECS World (Performa Tinggi)                               │ │  
-│  │  • Entities: Elemen desain (berbasis ID).                  │ │  
-│  │  • Components: Data murni (Transform, Style, Text, dll).   │ │  
-│  │  • Systems: Logika murni (LayoutSystem, RenderSystem, dll).│ │  
-│  │  • Query Engine: Pencarian komponen yang cepat.            │ │  
-│  │  • State Serialization: Snapshot & time-travel debugging.  │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  Performance Optimizations (Optimisasi Performa)           │ │  
-│  │  • Structure of Arrays (SoA) untuk pemrosesan data panas.  │ │  
-│  │  • Operasi SIMD untuk pemrosesan batch.                    │ │  
-│  │  • GPU compute shaders untuk tugas berat.                  │ │  
-│  │  • Worker threads untuk sistem paralel.                    │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-└─────────────────────────────────────────────────────────────────┘  
+┌──────────────────────────────────────────────────────────────────────┐  
+│     DATA LAYER (Lapisan Data \- Entity-Component-System)             │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  ECS World (Performa Tinggi)                                    │ │  
+│  │  • Entities: Elemen desain (berbasis ID).                       │ │  
+│  │  • Components: Data murni (Transform, Style, Text, dll).        │ │  
+│  │  • Systems: Logika murni (LayoutSystem, RenderSystem, dll).     │ │  
+│  │  • Query Engine: Pencarian komponen yang cepat.                 │ │  
+│  │  • State Serialization: Snapshot & time-travel debugging.       │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  Performance Optimizations (Optimisasi Performa)                │ │  
+│  │  • Structure of Arrays (SoA) untuk pemrosesan data panas.       │ │  
+│  │  • Operasi SIMD untuk pemrosesan batch.                         │ │  
+│  │  • GPU compute shaders untuk tugas berat.                       │ │  
+│  │  • Worker threads untuk sistem paralel.                         │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+└──────────────────────────────────────────────────────────────────────┘  
                               ↓ (Menghasilkan)  
-┌─────────────────────────────────────────────────────────────────┐  
-│      OUTPUT LAYER (Lapisan Keluaran \- Mode Ganda)              │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  CODE-FIRST OUTPUT (Output Utama \- BARU)                  │ │  
-│  │  • Kode TypeScript/JavaScript yang bersih dan dapat diedit.│ │  
-│  │  • Komentar yang dapat dibaca manusia.                     │ │  
-│  │  • Termasuk unit tests.                                    │ │  
-│  │  • "Resep" untuk regenerasi.                               │ │  
-│  │  • Interaktif secara default.                              │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-│  ┌────────────────────────────────────────────────────────────┐ │  
-│  │  ASSET OUTPUT (Output Sekunder)                            │ │  
-│  │  • Web: HTML, CSS, SVG, React, Vue                         │ │  
-│  │  • Cetak: PDF, EPS (CMYK, 300dpi)                          │ │  
-│  │  • Media Sosial: Aset untuk Instagram, Facebook, Twitter   │ │  
-│  │  • Mobile: Aset untuk iOS & Android                        │ │  
-│  │  • Motion: MP4, GIF, Lottie                                │ │  
-│  │  • 3D: OBJ, FBX, GLTF                                      │ │  
-│  └────────────────────────────────────────────────────────────┘ │  
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐  
+│      OUTPUT LAYER (Lapisan Keluaran \- Mode Ganda)                   │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  CODE-FIRST OUTPUT (Output Utama \- BARU)                       │ │  
+│  │  • Kode TypeScript/JavaScript yang bersih dan dapat diedit.     │ │  
+│  │  • Komentar yang dapat dibaca manusia.                          │ │  
+│  │  • Termasuk unit tests.                                         │ │  
+│  │  • "Resep" untuk regenerasi.                                    │ │  
+│  │  • Interaktif secara default.                                   │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+│  ┌─────────────────────────────────────────────────────────────────┐ │  
+│  │  ASSET OUTPUT (Output Sekunder)                                 │ │  
+│  │  • Web: HTML, CSS, SVG, React, Vue                              │ │  
+│  │  • Cetak: PDF, EPS (CMYK, 300dpi)                               │ │  
+│  │  • Media Sosial: Aset untuk Instagram, Facebook, Twitter        │ │  
+│  │  • Mobile: Aset untuk iOS & Android                             │ │  
+│  │  • Motion: MP4, GIF, Lottie                                     │ │  
+│  │  • 3D: OBJ, FBX, GLTF                                           │ │  
+│  └─────────────────────────────────────────────────────────────────┘ │  
+└──────────────────────────────────────────────────────────────────────┘
 ```
 ## **4\. Sistem Abstraksi Multi-Level (10 Tingkat)**
 
