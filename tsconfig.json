@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ecs/*": ["packages/ecs/*"],
+      "@compiler/*": ["packages/compiler/*"],
+      "@agents-specialized/*": ["packages/agents-specialized/*"],
+      "@agents-strategy/*": ["packages/agents-strategy/*"]
+    },
+    "module": "commonjs",
+    "target": "ES2019",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["packages/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
